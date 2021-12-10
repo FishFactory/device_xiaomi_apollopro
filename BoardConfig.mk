@@ -19,10 +19,10 @@ TARGET_USES_PREBUILT_KERNEL := true
 # Inherit from xiaomi sm8250-common
 -include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/apollopro
+DEVICE_PATH := device/xiaomi/apollon
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := apollopro,apollo
+TARGET_OTA_ASSERT_DEVICE := apollon,apollo
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -37,7 +37,7 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 else
-TARGET_KERNEL_CONFIG := apollopro_defconfig
+TARGET_KERNEL_CONFIG := apollon_defconfig
 endif
 
 # Properties

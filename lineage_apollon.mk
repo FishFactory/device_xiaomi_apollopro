@@ -18,14 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from apollopro device
-$(call inherit-product, device/xiaomi/apollopro/device.mk)
+# Inherit from apollon device
+$(call inherit-product, device/xiaomi/apollon/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_apollopro
-PRODUCT_DEVICE := apollopro
+PRODUCT_NAME := lineage_apollon
+PRODUCT_DEVICE := apollon
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10T Pro
